@@ -34,6 +34,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Classes = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelScheduleDoc = new System.Windows.Forms.Label();
+            this.richTextBoxScheduleDoc = new System.Windows.Forms.RichTextBox();
             this.MainTabWindow.SuspendLayout();
             this.TabInput.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -62,6 +64,8 @@
             // 
             // TabScheduler
             // 
+            this.TabScheduler.Controls.Add(this.labelScheduleDoc);
+            this.TabScheduler.Controls.Add(this.richTextBoxScheduleDoc);
             this.TabScheduler.Location = new System.Drawing.Point(4, 22);
             this.TabScheduler.Name = "TabScheduler";
             this.TabScheduler.Padding = new System.Windows.Forms.Padding(3);
@@ -103,6 +107,25 @@
             this.textBox1.Size = new System.Drawing.Size(97, 20);
             this.textBox1.TabIndex = 1;
             // 
+            // labelScheduleDoc
+            // 
+            this.labelScheduleDoc.AutoSize = true;
+            this.labelScheduleDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelScheduleDoc.Location = new System.Drawing.Point(12, 12);
+            this.labelScheduleDoc.Name = "labelScheduleDoc";
+            this.labelScheduleDoc.Size = new System.Drawing.Size(116, 20);
+            this.labelScheduleDoc.TabIndex = 0;
+            this.labelScheduleDoc.Text = "Schedule docs";
+            // 
+            // richTextBoxScheduleDoc
+            // 
+            this.richTextBoxScheduleDoc.Location = new System.Drawing.Point(16, 40);
+            this.richTextBoxScheduleDoc.Name = "richTextBoxScheduleDoc";
+            this.richTextBoxScheduleDoc.ReadOnly = true;
+            this.richTextBoxScheduleDoc.Size = new System.Drawing.Size(452, 174);
+            this.richTextBoxScheduleDoc.TabIndex = 1;
+            this.richTextBoxScheduleDoc.Text = "Use this Schedule tab to build and review your space schedule.\r\n\r\n- Add classes in the Input tab.\r\n- Use schedule builder controls to generate timetables.\r\n- Save or export schedule.\r\n\r\nFor more information, see the project README or documentation.";
+            // 
             // MainScheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +150,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label Classes;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelScheduleDoc;
+        private System.Windows.Forms.RichTextBox richTextBoxScheduleDoc;
     }
 }
 
